@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(rgb(190, 193, 196));
+}
+.navbar{
+    display: flex;
+    text-decoration: none;
+}
+.navbar li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+ 
+}
+.navbar li a:hover{
+    background-color: skyblue;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px;
+}
+.logo{
+    list-style: none;
+    text-decoration: none;
+    font-size: 29px;
+    color: darkred;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.icon{
+    padding: 5px;
+    margin-right: 1rem;
+}
+.icon i{
+    background-color: transparent;
+    border: 1px solid gray;
+    color: black;
+    padding: 5px;
+}
+.icon i:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+}
+#menu-icon{
+    display: none;
+}
+.search-form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    z-index: 0;
+    display: none;
+
+}
+.search-form input{
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 50rem;
+}
+.search-form ::placeholder{
+    color: black;
+}
+#close{
+    position: absolute;
+    right: 2rem;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    top: 1rem;
+}
+.user-form{
+    position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: gray;
+        z-index: 0;
+        display: none;
+}
+.user-form-con{
+    position: absolute;
+    top: 10rem;
+    left: 35rem;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+.user-form-con input{
+    padding: 10px;
+     display: flex;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.user-form-con .btn{
+    background-color: darkred;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 4rem;
+}
+#closee{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.main img{
+    width: 100%;
+    height: 100vh;
+}
+.main1{
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+}
+.main1 h1{
+     color: darkred;
+     font-size: 45px;
+     letter-spacing: 2px;
+     margin-bottom: 2px;
+     font-weight: 200;
+     text-transform: capitalize;
+}
+.main1 h2{
+    color: rgb(88, 3, 3);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 200;
+
+}
+.main1 p{
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+.main1 .btn1{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+ .product {
+     margin-top: 2rem;
+ }
+
+ .product1 h3 {
+     text-align: center;
+     font-size: 20px;
+     color: rgb(243, 207, 1);
+     letter-spacing: 2px;
+     font-weight: 200;
+     margin-top: 2rem;
+ }
+ .product1 h4{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    font-weight: bold;
+ }
+ .product2{
+    display: flex;
+    gap: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+ }
+ .product3{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 5px rgba(gainsboro);
+    padding: 10px;
+ }
+ .product3-icon{
+    visibility: hidden;
+    gap: 10px;
+    margin-left: 3rem;
+ }
+ .product3:hover .product3-icon{
+    visibility: visible;
+ }
+ .product3-icon i{
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 2px;
+ }
+ .product3 h5{
+    text-align: center;
+    color: darkred;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 200;
+ }
+ .product3 button{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+ }
+ .product3 button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+ }
+.con{
+    width: 100%;
+    height: 50vh;
+}
+.banner{
+    width: 380px;
+    height: 300px;
+    background-image: url(images/first\ shoes.png);
+    background-size: cover;
+    background-position: 69;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.banner-1{
+    width: 380px;
+    height: 300px;
+    background-image: url(images/earphone\ project.png);
+    background-size: cover;
+        background-position: 69;
+        border-radius: 10px;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+}
+.banner-2{
+    width: 380px;
+        height: 300px;
+        background-image: url(images/shoes.png);
+        background-size: cover;
+        background-position: 69;
+        border-radius: 10px;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+}
+.banner1{
+    display: flex;
+    margin-left: 2rem;
+}
+.banner-con{
+    padding-top: 5rem;
+    padding-left: 1.7rem;
+}
+.banner-1 .banner-con{
+    padding-left: 10px;
+    padding-top: 4.2rem;
+}
+.banner-2 .banner-con{
+    padding-top: 4.5rem;
+}
+.banner-con h2{
+    font-size: 28px;
+    color: darkred;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    font-weight: 200;
+}
+.banner-con h4{
+    font-size: 21px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.banner-con button{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.banner-con button:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+}
+.product-2{
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.sa-banner{
+    margin-top: 5rem;
+}
+.review{
+    width: 100%;
+    background-color: rgb(78, 77, 77);
+    padding-top: 3.7rem;
+    display: flex;
+}
+form{
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    background-color: aliceblue;
+    width: 600px;
+    height: 30px;
+    display: flex;
+}
+form input{
+    flex: 2;
+    outline: none;
+}
+form button{
+    background-color: tomato;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+}
+.review h2{
+    margin-left: 5rem;
+    letter-spacing: 2px;
+    color: darkred;
+    font-size: 35px;
+    font-weight: 200;
+}
+span{
+    color: bisque;
+    font-size: 29px;
+}
+.sa-banner-icon i{
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 7px;
+    width: 15%;
+    border-radius: 15px;
+    visibility: hidden;
+}
+.sa-banner2:hover .sa-banner-icon i{
+    visibility: visible;
+    display: flex;
+ 
+}
+.sa-banner-con h3{
+    text-align: center;
+    font-size: 30px;
+    color: darkred;
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.sa-banner2:hover{
+    background-color: aqua;
+}
+.sa-banner2{
+    box-shadow: 10px 10px 10px rgba(black);
+    border-radius: 5px;
+    border: 1px solid rgb(99, 102, 102);
+    padding: 5px;
+}
+.sa-banner2 h3{
+    text-align: center;
+    font-size: 19px;
+    color: darkred;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.sa-banner1{
+    display: flex;
+    gap: 4rem;
+    margin-left: 6rem;
+    margin-right: 2rem;
+
+}
+.product-3{
+    display: flex;
+    gap: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-device-width: 100px) and (max-device-width: 800px){
+    #menu-icon{
+        display: block;
+    }
+    .logo{
+        font-size: 19px;
+    }
+    .icon{
+        display: flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: aliceblue;
+        z-index: 0;
+        display: none;
+    }
+    .navbar li{
+        border: 1px solid gray;
+
+    }
+    .search-form{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: gray;
+        z-index: 0;
+        display: none;
+    }
+    .search-form input{
+        position: absolute;
+        left: 2rem;
+        top: 8rem;
+        padding: 5px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    #close{
+        position: absolute;
+        right: 1rem;
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+    .user-form{
+        background-color: gray;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5rem;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+    .user-form-con{
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+        right: 2rem;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .user-form-con input{
+        padding: 5px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        margin-left: 1rem;
+    }
+    .user-form-con ::placeholder{
+        color: black;
+    }
+    .user-form-con .btn{
+        background-color: darkred;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px;
+        margin-left: 4rem;
+    }
+    .user-form-con .btn:hover{
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+    }
+    .main1{
+        margin-left: -1.8rem;
+        margin-top: -4rem;
+    }
+    .main1 h1{
+        font-size: 23px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        margin-bottom: 4px;
+    }
+    .main1 h2{
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        
+    }
+    .main1 p{
+        font-size: 10px;
+        display: none;
+    }
+    .main1 p{
+        margin-bottom: 5px;
+      
+    }
+    .main1 .btn1{
+        margin-top: 6px;
+        margin-left: 1px;
+
+    }
+    .product2{
+    flex-direction: column;
+    margin-left: 1px;
+   }
+   .product3{
+    padding-left: 2.5rem;
+   }
+   .banner1{
+    flex-direction: column;
+    margin-left: 1px;
+   }
+   .banner{
+    width: 300px;
+    height: 200px;
+    margin-left: 1px;
+   }
+   .banner-1{
+    width: 290px;
+    height: 190px;
+    margin-left: 1px;
+   }
+   .banner-2{
+    width: 290px;
+    height: 190px;
+    margin-left: 1px;
+   }
+   .product-2{
+    flex-direction: column;
+    margin-top: 40rem;
+    margin-left: 1px;
+   
+    
+   }
+   .product-3{
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    margin-left: 1px;
+   }
+   .product3 img{
+    width: 180px;
+
+   }
+   .sa-banner1{
+    margin-left: 10px;
+   }
+   .sa-banner2{
+   padding: 2px;
+   width: 220px;
+  
+   }
+   .sa-banner2 img{
+    width: 180px;
+   }
+
+  .review{
+    flex-direction: column;
+    width: 95%;
+  }
+   .review form{
+    margin-left: 10px;
+    width: 10%;
+
+   }
+   .review button{
+    width: 9%;
+   }
+   .sa-banner1{
+    flex-direction: column;
+    margin-left: 2px;
+    padding-right: 2px;
+   }
+   .sa-banner2{
+    margin-left: 1rem;
+   }
+   .footer{
+    background-color: gray;
+    margin-top: 2rem;
+    border-top-left-radius: 25px;
+    width: 90%;
+   }
+   .footer-con h2{
+    font-size: 29px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-top: 10px;
+  margin-left: 1rem;
+   }
+   .footer-con li{
+    list-style: none;
+    
+   }
+   .h2{
+    margin-bottom: 10px;
+   }
+   .footer-con{
+    margin-bottom: 1rem;
+   }
+   .footer-con li a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding-bottom: 2px;
+   }
+   .footer-con h5{
+    font-size: 20px;
+    color: darkred;
+    font-weight: 200;
+    letter-spacing: 2px;
+   }
+   p{
+    font-size: 12px;
+   }
+   .footer-con i{
+      background-color: black;
+      border: 1px solid rgb(10, 10, 10);
+      color: white;
+      padding: 5px;
+      margin-left: 2px;
+      border-radius: 50%;
+      margin-top: 5px;
+   }
+   .footer-con i:hover{
+    background-color: transparent;
+    color: wheat;
+    border: 1px solid wheat;
+   }
+   .sa-banner-con h3{
+    font-size: 20px;
+   }
+ 
+}
